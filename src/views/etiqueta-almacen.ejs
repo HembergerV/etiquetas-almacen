@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>Etiqueta</title>
+</head>
+<body>
+    <div class="main">
+        <h3>Etiqueta inventario</h3>
+        <form name="form" id="wrapper" method="post">
+        <div class="form-group">
+            <label style="position:absolute"> <code>*</code> &nbsp; Proveedor </label>
+            <input maxlength=6 name="proveedor" id="proveedor" style="margin-left: 120px" type="text" placeholder="Proveedor"> 
+        </div>
+        <br>
+        <div class="form-group">
+            <label style="position:absolute"> <code>*</code> &nbsp; Fecha </label>
+            <input name="fecha" id="fecha" style="margin-left: 120px" type="date">
+        </div>
+        
+        <br>
+           <br>
+            <input id="file" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" onchange="checkfile(this)"/>
+            <br>
+            <div id="tabla-datos" name="datos">
+                
+            </div>
+            
+            <br>
+
+        </form>
+        <br>
+
+      <button onclick="abre()">Imprimir</button>
+                        
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/xlsx.full.min.js"></script>
+    <script src="js/client.js"></script>
+    <script src="js/jquery.dataTables.js"></script>
+
+</body>
+</html>
